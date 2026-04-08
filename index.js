@@ -3,8 +3,7 @@ const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const path = require('path');
 
-// Import your controller logic
-// Note: We added renderDashboard here because it was missing in your last version
+
 const { 
     renderDashboard, 
     createProduct, 
@@ -29,10 +28,10 @@ app.use(express.json());
 
 // Set View Engine
 app.set('view engine', 'ejs');
-// __dirname is essential to find the views folder correctly
+
 app.set('views', path.join(__dirname, 'views'));
 
-// --- ROUTES ---
+// ROUTES 
 
 // UI Routes
 app.get('/', renderDashboard); 
