@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGODB_URL)
     .then(() => console.log(' MongoDB Connected...'))
     .catch(err => console.error(' Database connection error:', err));
 
-// Body parser
+
 app.use(express.json());
 
 // Set View Engine
